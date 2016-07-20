@@ -1,11 +1,11 @@
---ihaveamac--
--- https://github.com/ihaveamac/downgrade-check
-version = "1.0"
+--forked from ihaveamac
+-- https://github.com/firstbass/downgrade-check
+version = "1.1"
 
--- 9.2 NATIVE_FIRM: 2.46-0
+-- 10.4 NATIVE_FIRM: 2.50-11
 firmmajor, firmminor, firmrev = System.getKernel()
 downgraded = false
-if firmmajor <= 2 and firmminor <= 46 and firmrev <= 0 then
+if firmmajor <= 2 and firmminor <= 50 and firmrev <= 11 then
     downgraded = true
 end
 
@@ -28,8 +28,8 @@ end
 
 Screen.debugPrint(5, 80, "Installed NATIVE_FIRM:", c_white, BOTTOM_SCREEN)
 Screen.debugPrint(221, 80, firmmajor.."."..firmminor.."-"..firmrev, c_white, BOTTOM_SCREEN)
-Screen.debugPrint(5, 95, "9.2 NATIVE_FIRM:", c_white, BOTTOM_SCREEN)
-Screen.debugPrint(221, 95, "2.46-0", c_white, BOTTOM_SCREEN)
+Screen.debugPrint(5, 95, "10.4 NATIVE_FIRM:", c_white, BOTTOM_SCREEN)
+Screen.debugPrint(221, 95, "2.50-11", c_white, BOTTOM_SCREEN)
 Screen.debugPrint(5, 135, "A: exit", c_white, BOTTOM_SCREEN)
 Screen.debugPrint(5, 150, "X: reboot", c_white, BOTTOM_SCREEN)
 
