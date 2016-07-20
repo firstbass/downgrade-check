@@ -4,8 +4,10 @@ version = "1.1"
 
 -- 10.4 NATIVE_FIRM: 2.50-11
 firmmajor, firmminor, firmrev = System.getKernel()
+desiredfirm=25011
+yourfirm=firmmajor*1000 + firmminor*100 + firmrev
 downgraded = false
-if firmmajor <= 2 and firmminor <= 50 and firmrev <= 11 then
+if desiredfirm >= yourfirm then
     downgraded = true
 end
 
