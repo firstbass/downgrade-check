@@ -22,10 +22,10 @@ Screen.fillEmptyRect(6, 314, 17, 18, c_grey, BOTTOM_SCREEN)
 
 if downgraded then
     Screen.debugPrint(5, 25, "Congratulations! You have properly", c_white, BOTTOM_SCREEN)
-    Screen.debugPrint(5, 40, "downgraded your console. Enjoy!", c_white, BOTTOM_SCREEN)
+    Screen.debugPrint(5, 40, "downgraded your NATIVE_FIRM.", c_white, BOTTOM_SCREEN)
 else
     Screen.debugPrint(5, 25, "Unfortunately you did not seem to", c_white, BOTTOM_SCREEN)
-    Screen.debugPrint(5, 40, "downgrade to 9.2 properly.", c_white, BOTTOM_SCREEN)
+    Screen.debugPrint(5, 40, "downgrade to 10.4 NATIVE_FIRM.", c_white, BOTTOM_SCREEN)
 end
 
 Screen.debugPrint(5, 80, "Installed NATIVE_FIRM:", c_white, BOTTOM_SCREEN)
